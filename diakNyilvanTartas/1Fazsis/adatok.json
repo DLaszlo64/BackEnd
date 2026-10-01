@@ -1,0 +1,25 @@
+{
+    "osztaly": {"id": 1,
+  "firstName": "Student",
+  "lastName": "Johnson",
+  "email": "michael.johnson@company.com",
+  "currency": "USD",
+  "address": {
+    "street": "321 Tech Street",
+    "city": "Seattle",
+    "state": "WA",
+    "zipCode": "98101"
+  }},
+    "diakok" : {
+        "id": 1,
+        "firstName": "Studen2",
+        "lastName": "Johnson",
+        "email": "michael.johnson@company.com",
+        "currency": "USD",
+        "address": {
+          "street": "321 Tech Street",
+          "city": "Seattle",
+          "state": "WA",
+          "zipCode": "98101"
+        }}
+}
