@@ -7,7 +7,6 @@
         "firstName": "Studen1",
         "lastName": "Johnson",
         "email": "michael.johnson@company.com",
-        "currency": "USD",
         "address": {
           "street": "321 Tech Street",
           "city": "Seattle",
