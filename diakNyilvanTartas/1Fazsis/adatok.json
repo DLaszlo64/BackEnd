@@ -1,9 +1,7 @@
 {
     "osztaly": {"id": 1,
   "osztalyNev": "13C",
-  "osztalyFonok": "Tanar1"
-
-},
+  "osztalyFonok": "Tanar1",
     "diakok" : {
         "id": 1,
         "firstName": "Studen1",
@@ -16,4 +14,4 @@
           "state": "WA",
           "zipCode": "98101"
         }}
-}
+} }
