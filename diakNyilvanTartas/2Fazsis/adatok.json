@@ -1,0 +1,17 @@
+{
+    "osztaly": {"id": 1,
+  "osztalyNev": "13C",
+  "osztalyFonok": "Tanar1",
+    "diakok" : {
+        "id": 1,
+        "firstName": "Studen1",
+        "lastName": "Johnson",
+        "email": "michael.johnson@company.com",
+        "currency": "USD",
+        "address": {
+          "street": "321 Tech Street",
+          "city": "Seattle",
+          "state": "WA",
+          "zipCode": "98101"
+        }}
+}   }
