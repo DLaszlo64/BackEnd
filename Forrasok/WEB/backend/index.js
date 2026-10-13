@@ -43,6 +43,17 @@ app.post("/api/ujzenekar", (req, res) => {
     }
 })
 
+app.get("/api/stilus", (req, res) => {
+    try {
+        pool.query("SELECT stilus_neve FROM stilusok", (err, results) =>{
+            if(err) console.log(err);
+            else res.send(results);
+        });
+    } catch (error) {
+        res.status(500).json({hiba: error.message})
+    }
+})
+
 app.get("/", (req, res) =>{
     res.send("Hello word");
 })
