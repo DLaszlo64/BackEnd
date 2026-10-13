@@ -18,9 +18,9 @@ const pool = mysql2.createPool({
     port: process.env.DB_PORT
 })
 
-app.get("/rock",  (req, res) => {
+app.get("/api/zenekar",  (req, res) => {
     try {
-        pool.query("SELECT * FROM stilusok", (err, results) => {
+        pool.query("SELECT * FROM zenekarok", (err, results) => {
             if(err) console.log(err);
             else res.send(results);
         });
@@ -28,6 +28,20 @@ app.get("/rock",  (req, res) => {
         res.status(500).json({hiba: error.message});
     }
 });
+
+app.post("/api/ujzenekar", (req, res) => {
+    try{
+        pool.query("insert int zenekarok(id, nev, stilus_id, orszag, varos, aktiv_evek, tagok, legsikeresebb_album, kep_url) VALUES(id:7)",(err,results) =>{
+            if (err) {
+                console.log(err);
+            }else{
+                res.send(results)
+            }
+        })
+    }catch(error) {
+        res.status(400).json({hiba: error.message});
+    }
+})
 
 app.get("/", (req, res) =>{
     res.send("Hello word");
