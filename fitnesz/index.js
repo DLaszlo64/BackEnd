@@ -49,8 +49,7 @@ app.get('/berletek/kereses/:szoveg', (req, res) => {
 });
 
 app.get('/tipusok/statisztika', (req, res) => {
-    const sql = `SELECT t.nev AS tipus_nev, COUNT(b.id) AS berletek_szama, ROUND(AVG(b.ar), 1) AS atlagos_ar FROM tipusok t INNER JOIN berletek b ON t.id = b.tipus_id GROUP BY t.id, t.nev
-    `;
+    const sql = `SELECT t.nev AS tipus_nev, COUNT(b.id) AS berletek_szama, ROUND(AVG(b.ar), 1) AS atlagos_ar FROM tipusok t INNER JOIN berletek b ON t.id = b.tipus_id GROUP BY t.id, t.nev`;
 
     db.query(sql, (err, results) => {
         if (err) {
