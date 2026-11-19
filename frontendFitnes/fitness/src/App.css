@@ -1,0 +1,14 @@
+#cim{
+  text-align: center;
+}
+#alcim{
+  text-align: center;
+}
+.hely{
+  background-color: red;
+  position: relative;
+  left: 25%;
+  top:11rem;
+  width: 50%;
+  text-align: center;
+}
